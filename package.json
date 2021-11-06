@@ -13,6 +13,7 @@
   "dependencies": {
     "graphql": "^16.0.1",
     "knex": "0.21.18",
+    "mysql": "^2.18.1",
     "pg": "^8.7.1",
     "pg-connection-string": "^2.5.0",
     "sqlite3": "5.0.0",
