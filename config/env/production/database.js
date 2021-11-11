@@ -1,5 +1,5 @@
 const parse = require('pg-connection-string').parse;
-const config = parse(process.env.DATABASE_URL);
+const config = parse('postgresql://postgres:UMotxGDDCJxeTkjYpOFG@containers-us-west-17.railway.app:6166/railway');
 
 module.exports = ({ env }) => ({
   defaultConnection: 'default',
@@ -8,11 +8,11 @@ module.exports = ({ env }) => ({
       connector: 'bookshelf',
       settings: {
         client: 'postgres',
-        host: config.host,
-        port: config.port,
-        database: config.database,
-        username: config.user,
-        password: config.password,
+        host: 'containers-us-west-17.railway.app',
+        port: '6166',
+        database: 'railway',
+        username: 'postgres',
+        password: 'UMotxGDDCJxeTkjYpOFG',
         ssl: {
           rejectUnauthorized: false,
         },
